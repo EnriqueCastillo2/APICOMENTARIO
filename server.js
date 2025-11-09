@@ -50,6 +50,7 @@ res.json({ message: "UMG Web Application" });
 // });
 
 require("./app/routes/comentario.routes.js")(app);
+require("./app/routes/matricula.routes.js")(app);
 require("./app/routes/stripe.routes.js")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8081;

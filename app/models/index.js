@@ -30,6 +30,7 @@ db.sequelize = sequelize;
 // se crea una variable clientes que importa el modelo que esta dentro de la carpeta models/cliente.model.js
 
 db.comentario =  require("./comentario.model.js")(sequelize,Sequelize);
+db.matricula =  require("./matricula.model.js")(sequelize,Sequelize);
 // puede seguir agregando mas modelos e importarlos de la seguiente manera
 //db.tutorials = require("./tutorial.model.js")(sequelize, Sequelize);
 // se utiliza el export para que el objeto db pueda ser accedio a travez de otras clases. 
